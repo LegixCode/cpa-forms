@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="order_form_wrapper"></div>
+
+<link rel="stylesheet" href="https://legixcode.github.io/cpa-forms/v1/css/orderForm.css">
+<script src="js/cpaform.js"></script>
+<script>
+    new CPAForm({
+        action: 'order.php',
+        hiddenInputs: '<input type="hidden" value={subid}">',
+        prices: [
+            {
+                country: 'ES',
+                price_new: '39$',
+                price_old: '78$',
+                hiddenInputs: '<input type="hidden" flow="es">'
+            },
+            {
+                country: 'CL',
+                price_new: '39 CCPL',
+                price_old: '78 CCPL',
+                hiddenInputs: '<input type="hidden" flow="cl">'
+            }
+        ],
+        scroll_to_form: true
+    })
+</script>
