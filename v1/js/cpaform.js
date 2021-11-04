@@ -17,7 +17,7 @@ class CPAForm {
             info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "ZANECHAT ŽÁDOST"'
         },
         'FI': {
-            label_name: 'nimi',
+            label_name: 'Nimi',
             label_phone: 'Puhelinnumero',
             label_button: 'JÄTÄ PYYNTÖ',
             title: 'Virallinen tilauslomake',
@@ -27,10 +27,10 @@ class CPAForm {
         'MK': {
             label_name: 'Име',
             label_phone: 'Телефонски број',
-            label_button: 'ДА НАРАЧА',
+            label_button: 'НАРАЧАЈТЕ СЕГА',
             title: 'Официјален формулар за нарачка',
             sub_title: 'Земете го по промотивна цена',
-            info: 'За да нарачате, внесете го вашето име и телефонски број во полињата подолу и кликнете "ДА НАРАЧА"'
+            info: 'За да нарачате, внесете го вашето име и телефонски број во полињата подолу и кликнете "НАРАЧАЈТЕ СЕГА"'
         },
         'AL': {
             label_name: 'Emri',

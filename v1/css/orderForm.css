@@ -1,6 +1,6 @@
 #cpa_form {
   background: white;
-  padding: 15px;
+  padding: 30px 15px;
   max-width: 600px;
   font-family: "Roboto", sans-serif;
   margin: 20px auto;
@@ -110,7 +110,7 @@
   font-weight: 700;
 }
 
-.cpa_form_medimg {
+img.cpa_form_medimg {
   max-width: 100px;
   margin: 20px 0;
 }
