@@ -35,10 +35,10 @@ class CPAForm {
         'AL': {
             label_name: 'Emri',
             label_phone: 'Numri i telefonit',
-            label_button: 'PËR TË POROSITUAR',
+            label_button: 'POROSIT ME ZBRITJE',
             title: 'Formulari zyrtar i porosisë',
-            sub_title: 'Merre me një çmim promocional',
-            info: 'Për të bërë një porosi, shkruani emrin dhe numrin tuaj të telefonit në fushat më poshtë dhe klikoni "PËR TË POROSITUAR"'
+            sub_title: 'Porosit me një çmim promocional',
+            info: 'Për të bërë një porosi, shkruani emrin dhe numrin tuaj të telefonit në fushat më poshtë dhe klikoni "POROSIT ME ZBRITJE"'
         },
         'BA': {
             label_name: 'Ime',
