@@ -1,4 +1,4 @@
-#order_form {
+#cpa_form {
   background: white;
   padding: 15px;
   max-width: 600px;
@@ -11,19 +11,19 @@
 }
 
 @media (min-width: 600px) and (max-width: 739px) {
-  #order_form {
+  #cpa_form {
     padding: 20px !important;
   }
 }
 
 @media (min-width: 460px) and (max-width: 599px) {
-  #order_form {
+  #cpa_form {
     padding: 20px !important;
   }
 }
 
-#order_form input,
-#order_form select {
+#cpa_form input,
+#cpa_form select {
   display: block;
   margin: 0 auto;
   font-size: 21px;
@@ -35,7 +35,7 @@
   margin-bottom: 15px;
 }
 
-#order_form button {
+#cpa_form button {
   margin: 0 auto;
   display: block;
   padding: 20px;
@@ -54,53 +54,53 @@
   font-size: 20px;
 }
 
-#order_form button:hover,
+#cpa_form button:hover,
 .obutton:hover {
   background-color: #017acc;
 }
 
-#order_form button:active {
+#cpa_form button:active {
   position: relative;
   top: 1px;
 }
 
 @media screen and (max-width: 480px) {
-  #order_form input {
+  #cpa_form input {
   }
 
-  #order_form label {
+  #cpa_form label {
     font-size: 14px;
   }
 
-  #order_form button {
+  #cpa_form button {
     font-size: 16px;
   }
 
-  #order_form {
+  #cpa_form {
     /*padding: 10px;
         padding-bottom: 180px;
         margin-bottom: -200px;*/
   }
 
-  #order_form .order_form_pole {
+  #cpa_form .cpa_form_pole {
     padding: 0px;
     margin: 2px;
   }
 }
 
 @media screen and (max-width: 459px) {
-  #order_form input {
+  #cpa_form input {
     width: 80%;
   }
 
-  #order_form {
+  #cpa_form {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 349px) {
-  #order_form input {
+  #cpa_form input {
     font-size: 17px;
   }
 }
@@ -110,29 +110,29 @@
   font-weight: 700;
 }
 
-.order_form_medimg {
+.cpa_form_medimg {
   max-width: 100px;
   margin: 20px 0;
 }
-.order_form p {
+.cpa_form p {
   margin: 0;
 }
-.order_form_prices {
+.cpa_form_prices {
   margin-top: 5px;
   margin-bottom: 10px;
   font-weight: 700;
 }
-.order_form_price_old {
+.cpa_form_price_old {
   color: red;
   text-decoration: line-through;
   font-size: 22px !important;
 }
-.order_form_price_new {
+.cpa_form_price_new {
   margin-left: 10px;
   color: green;
   font-size: 26px !important;
 }
-.order_form_info {
+.cpa_form_info {
   margin: 0px 10px 20px 10px;
   border: 2px solid #0299ff;
   padding: 10px;

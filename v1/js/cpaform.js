@@ -110,22 +110,22 @@ class CPAForm {
 
     constructor(params) {
         CPAForm.params = params;
-        var wrappers = document.getElementsByClassName('order_form_wrapper');
+        var wrappers = document.getElementsByClassName('cpa_form_wrapper');
         for (let wrapper of wrappers) {
             wrapper.innerHTML = `
-            <form class="order_form" action="${params.action}" id="order_form" method="POST">
+            <form class="cpa_form" action="${params.action}" id="cpa_form" method="POST">
                 ${params.hiddenInputs}
-                <div id="order_form_place">
+                <div id="cpa_form_place">
                     <center>
-                        <img src="https://legixcode.github.io/cpa-forms/v1/img/med.png" class="order_form_medimg">
+                        <img src="https://legixcode.github.io/cpa-forms/v1/img/med.png" class="cpa_form_medimg">
                         <h2 id="title"></h2>
                         <p id="sub_title"></p>
-                        <div class="order_form_prices">
-                            <span class="order_form_price_old"></span>
-                            <span class="order_form_price_new"></span>
+                        <div class="cpa_form_prices">
+                            <span class="cpa_form_price_old"></span>
+                            <span class="cpa_form_price_new"></span>
                         </div>
                     </center>
-                    <div class="order_form_info" id="info">
+                    <div class="cpa_form_info" id="info">
                     </div>
                     <div id="input_wrapper"></div>
                     <div id="country_wrapper"></div>
@@ -141,7 +141,7 @@ class CPAForm {
     }
 
     InitForms(prices) {
-        var elems = document.getElementsByClassName('order_form');
+        var elems = document.getElementsByClassName('cpa_form');
         for (let elem of elems) {
             var country_wrapper = elem.querySelector('#country_wrapper');
             if (prices.length == 1) {
@@ -168,10 +168,11 @@ class CPAForm {
 
                 var price = CPAForm.getPrice(prices, countryElem.value);
 
-                elem.querySelector('#input_wrapper').innerHTML = price.hiddenInputs;
+                if (price.hiddenInputs)
+                    elem.querySelector('#input_wrapper').innerHTML = price.hiddenInputs;
 
-                elem.querySelector('.order_form_price_old').innerText = price.price_old;
-                elem.querySelector('.order_form_price_new').innerText = price.price_new;
+                elem.querySelector('.cpa_form_price_old').innerText = price.price_old;
+                elem.querySelector('.cpa_form_price_new').innerText = price.price_new;
 
                 var language = CPAForm.languages[country.language];
                 phoneElem.placeholder = language.label_phone;
@@ -203,7 +204,7 @@ class CPAForm {
         for (let href of hrefs) {
             href.addEventListener('click', function (event) {
                 event.preventDefault();
-                CPAForm.doScrolling('#order_form', 1000);
+                CPAForm.doScrolling('#cpa_form', 1000);
             });
         }
     }
