@@ -11,10 +11,10 @@ class CPAForm {
         'CZ': {
             label_name: 'Jméno',
             label_phone: 'Telefonní číslo',
-            label_button: 'ZANECHAT ŽÁDOST',
+            label_button: 'OBJEDNAT',
             title: 'Formulář oficiální objednávky',
             sub_title: 'Získejte to za akční cenu',
-            info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "ZANECHAT ŽÁDOST"'
+            info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "OBJEDNAT"'
         },
         'FI': {
             label_name: 'Nimi',
