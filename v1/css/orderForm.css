@@ -1,0 +1,141 @@
+#order_form {
+  background: white;
+  padding: 15px;
+  max-width: 600px;
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+  background-image: url(https://legixcode.github.io/cpa-forms/v1/img/formbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 35px;
+}
+
+@media (min-width: 600px) and (max-width: 739px) {
+  #order_form {
+    padding: 20px !important;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 599px) {
+  #order_form {
+    padding: 20px !important;
+  }
+}
+
+#order_form input,
+#order_form select {
+  display: block;
+  margin: 0 auto;
+  font-size: 21px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 2px solid #e9d7dc;
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#order_form button {
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+  border-radius: 5px;
+  background-color: #0299ff;
+  background-position: 1.35em 0.94em;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  transition: all 0.15s ease-in-out;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#order_form button:hover,
+.obutton:hover {
+  background-color: #017acc;
+}
+
+#order_form button:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  #order_form input {
+  }
+
+  #order_form label {
+    font-size: 14px;
+  }
+
+  #order_form button {
+    font-size: 16px;
+  }
+
+  #order_form {
+    /*padding: 10px;
+        padding-bottom: 180px;
+        margin-bottom: -200px;*/
+  }
+
+  #order_form .order_form_pole {
+    padding: 0px;
+    margin: 2px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  #order_form input {
+    width: 80%;
+  }
+
+  #order_form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  #order_form input {
+    font-size: 17px;
+  }
+}
+
+.price {
+  color: red;
+  font-weight: 700;
+}
+
+.order_form_medimg {
+  max-width: 100px;
+  margin: 20px 0;
+}
+.order_form p {
+  margin: 0;
+}
+.order_form_prices {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.order_form_price_old {
+  color: red;
+  text-decoration: line-through;
+  font-size: 22px !important;
+}
+.order_form_price_new {
+  margin-left: 10px;
+  color: green;
+  font-size: 26px !important;
+}
+.order_form_info {
+  margin: 0px 10px 20px 10px;
+  border: 2px solid #0299ff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
