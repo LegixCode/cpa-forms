@@ -1,37 +1,5 @@
 class CPAForm {
     static languages = {
-        'ES': {
-            label_name: 'Nombre',
-            label_phone: 'Número de teléfono',
-            label_button: 'DEJAR UNA SOLICITUD',
-            title: 'Formulario de pedido oficial',
-            sub_title: 'Consíguelo a un precio promocional',
-            info: 'Para realizar un pedido, ingrese su nombre y número de teléfono en los campos a continuación y haga clic en "DEJAR UNA SOLICITUD"'
-        },
-        'CZ': {
-            label_name: 'Jméno',
-            label_phone: 'Telefonní číslo',
-            label_button: 'OBJEDNAT',
-            title: 'Formulář oficiální objednávky',
-            sub_title: 'Získejte to za akční cenu',
-            info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "OBJEDNAT"'
-        },
-        'FI': {
-            label_name: 'Nimi',
-            label_phone: 'Puhelinnumero',
-            label_button: 'JÄTÄ PYYNTÖ',
-            title: 'Virallinen tilauslomake',
-            sub_title: "Saat sen tarjoushintaan",
-            info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "JÄTÄ PYYNTÖ"'
-        },
-        'MK': {
-            label_name: 'Име',
-            label_phone: 'Телефонски број',
-            label_button: 'НАРАЧАЈТЕ СЕГА',
-            title: 'Официјален формулар за нарачка',
-            sub_title: 'Земете го по промотивна цена',
-            info: 'За да нарачате, внесете го вашето име и телефонски број во полињата подолу и кликнете "НАРАЧАЈТЕ СЕГА"'
-        },
         'AL': {
             label_name: 'Emri',
             label_phone: 'Numri i telefonit',
@@ -56,42 +24,68 @@ class CPAForm {
             sub_title: 'Вземете го на промоционална цена',
             info: 'За да направите поръчка, въведете вашето име и телефонен номер в полетата по-долу и щракнете върху "ОСТАВАЙ ЗАЯВКА"'
         },
+        'CZ': {
+            label_name: 'Jméno',
+            label_phone: 'Telefonní číslo',
+            label_button: 'OBJEDNAT',
+            title: 'Formulář oficiální objednávky',
+            sub_title: 'Získejte to za akční cenu',
+            info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "OBJEDNAT"'
+        },
+        'ES': {
+            label_name: 'Nombre',
+            label_phone: 'Número de teléfono',
+            label_button: 'DEJAR UNA SOLICITUD',
+            title: 'Formulario de pedido oficial',
+            sub_title: 'Consíguelo a un precio promocional',
+            info: 'Para realizar un pedido, ingrese su nombre y número de teléfono en los campos a continuación y haga clic en "DEJAR UNA SOLICITUD"'
+        },
+        'FI': {
+            label_name: 'Nimi',
+            label_phone: 'Puhelinnumero',
+            label_button: 'JÄTÄ PYYNTÖ',
+            title: 'Virallinen tilauslomake',
+            sub_title: "Saat sen tarjoushintaan",
+            info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "JÄTÄ PYYNTÖ"'
+        },
+        'GR': {
+            label_name: 'Ονομα',
+            label_phone: 'Αριθμός τηλεφώνου',
+            label_button: 'ΠΑΡΑΓΓΕΛΙΑ',
+            title: 'Επίσημη φόρμα παραγγελίας',
+            sub_title: 'Αποκτήστε το σε τιμή προσφοράς',
+            info: 'Για να το λάβετε, πληκτρολογήστε το όνομα και τον αριθμό τηλεφώνου σας στα παρακάτω πεδία και κάντε κλικ στο «ΠΑΡΑΓΓΕΛΙΑ».'
+        },
+        'IT': {
+            label_name: 'Nome',
+            label_phone: 'Numero di telefono',
+            label_button: 'ORDINA',
+            title: 'MODULO DI RICHIESTA UFFICIALE',
+            sub_title: 'Ordina a prezzo promozionale',
+            info: 'Per ricevere, inserisci il tuo nome e numero di telefono nei campi sottostanti e clicca su "ORDINA".'
+        },
+        'MK': {
+            label_name: 'Име',
+            label_phone: 'Телефонски број',
+            label_button: 'НАРАЧАЈТЕ СЕГА',
+            title: 'Официјален формулар за нарачка',
+            sub_title: 'Земете го по промотивна цена',
+            info: 'За да нарачате, внесете го вашето име и телефонски број во полињата подолу и кликнете "НАРАЧАЈТЕ СЕГА"'
+        },
+        'RO': {
+            label_name: 'Nume',
+            label_phone: 'Număr de telefon',
+            label_button: 'COMANDĂ',
+            title: 'Formular oficial de comandă',
+            sub_title: 'Comanda cu reducere',
+            info: 'Pentru a primi, introduceți numele și numărul de telefon în câmpurile de mai jos și faceți clic pe „COMANDĂ”.'
+        },
     }
 
     static countries = {
-        'ES': {
-            mask: '+{34} 000 00 00 00',
-            name: 'España',
-            language: 'ES'
-        },
-        'CL': {
-            mask: '+{56} 00 000 0000',
-            name: 'Chile',
-            language: 'ES'
-        },
-        'CZ': {
-            mask: '+{42\\0} 000 000 000',
-            name: 'čeština',
-            language: 'CZ'
-        },
-        'FI': {
-            mask: '+{358} 00 0000000',
-            name: 'Suomi',
-            language: 'FI'
-        },
-        'MK': {
-            mask: '+{389} 00 000 000',
-            name: 'Македонија',
-            language: 'MK'
-        },
         'AL': {
             mask: '+{355} 00 000 0000',
             name: 'Shqipëria',
-            language: 'AL'
-        },
-        'XK': {
-            mask: '+{383} 00 000 0000',
-            name: 'Kosova',
             language: 'AL'
         },
         'BA': {
@@ -103,7 +97,52 @@ class CPAForm {
             mask: '+{359} 00 000 0000',
             name: 'България',
             language: 'BG'
-        }
+        },
+        'CL': {
+            mask: '+{56} 00 000 0000',
+            name: 'Chile',
+            language: 'ES'
+        },
+        'CZ': {
+            mask: '+{42\\0} 000 000 000',
+            name: 'čeština',
+            language: 'CZ'
+        },
+        'ES': {
+            mask: '+{34} 000 00 00 00',
+            name: 'España',
+            language: 'ES'
+        },
+        'FI': {
+            mask: '+{358} 00 0000000',
+            name: 'Suomi',
+            language: 'FI'
+        },
+        'GR': {
+            mask: '+{3\\0} 00 0000 0000',
+            name: 'Ελλάδα',
+            language: 'GR'
+        },
+        'IT': {
+            mask: '+{39} 00 0000 0000',
+            name: 'Italia',
+            language: 'IT'
+        },
+        'MK': {
+            mask: '+{389} 00 000 000',
+            name: 'Македонија',
+            language: 'MK'
+        },
+        'RO': {
+            mask: '+{4\\0} 00 000 0000',
+            name: 'România',
+            language: 'RO'
+        },
+        'XK': {
+            mask: '+{383} 00 000 0000',
+            name: 'Kosova',
+            language: 'AL'
+        },
     }
 
     static params = {}
