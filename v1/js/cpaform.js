@@ -43,18 +43,18 @@ class CPAForm {
         'FI': {
             label_name: 'Nimi',
             label_phone: 'Puhelinnumero',
-            label_button: 'JÄTÄ PYYNTÖ',
+            label_button: 'TILAA ALENNUKSELLA',
             title: 'Virallinen tilauslomake',
             sub_title: "Saat sen tarjoushintaan",
-            info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "JÄTÄ PYYNTÖ"'
+            info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "TILAA ALENNUKSELLA"'
         },
         'GR': {
             label_name: 'Ονομα',
             label_phone: 'Αριθμός τηλεφώνου',
-            label_button: 'ΠΑΡΑΓΓΕΛΙΑ',
+            label_button: 'ΠΑΡΑΓΓΕΊΛΕΤΕ ΜΕ ΈΚΠΤΩΣΗ',
             title: 'Επίσημη φόρμα παραγγελίας',
             sub_title: 'Αποκτήστε το σε τιμή προσφοράς',
-            info: 'Για να το λάβετε, πληκτρολογήστε το όνομα και τον αριθμό τηλεφώνου σας στα παρακάτω πεδία και κάντε κλικ στο «ΠΑΡΑΓΓΕΛΙΑ».'
+            info: 'Για να το λάβετε, πληκτρολογήστε το όνομα και τον αριθμό τηλεφώνου σας στα παρακάτω πεδία και κάντε κλικ στο «ΠΑΡΑΓΓΕΊΛΕΤΕ ΜΕ ΈΚΠΤΩΣΗ».'
         },
         'IT': {
             label_name: 'Nome',
