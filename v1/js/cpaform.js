@@ -149,10 +149,11 @@ class CPAForm {
 
     constructor(params) {
         CPAForm.params = params;
-        var wrappers = document.getElementsByClassName('cpa_form_wrapper');
-        for (let wrapper of wrappers) {
-            var product_image = params.product_image ? `<img src="${params.product_image}" class="cpa_form_product">` : '';
-            wrapper.innerHTML = `
+        document.addEventListener("DOMContentLoaded", () => {
+            var wrappers = document.getElementsByClassName('cpa_form_wrapper');
+            for (let wrapper of wrappers) {
+                var product_image = params.product_image ? `<img src="${params.product_image}" class="cpa_form_product">` : '';
+                wrapper.innerHTML = `
             <form class="cpa_form" action="${params.action}" id="cpa_form" method="POST">
                 ${params.hiddenInputs}
                 <div id="cpa_form_place">
@@ -175,10 +176,11 @@ class CPAForm {
                     <button type="submit"></button>
                 </div>
             </form>`;
-        }
-        this.InitForms(params.prices);
-        if (params.scroll_to_form)
-            this.InitScrollToForm();
+            }
+            this.InitForms(params.prices);
+            if (params.scroll_to_form)
+                this.InitScrollToForm();
+        });
     }
 
     InitForms(prices) {
