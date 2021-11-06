@@ -113,11 +113,13 @@
 img.cpa_form_medimg {
   max-width: 100px;
   margin: 0 0 20px 0;
+  display: block;
 }
 img.cpa_form_product {
   max-width: 200px;
   max-height: 200px;
   margin: 0 0 20px 0;
+  display: block;
 }
 .cpa_form p {
   margin: 0;
