@@ -151,12 +151,14 @@ class CPAForm {
         CPAForm.params = params;
         var wrappers = document.getElementsByClassName('cpa_form_wrapper');
         for (let wrapper of wrappers) {
+            var product_image = params.product_image ? `<img src="${params.product_image}" class="cpa_form_product">` : '';
             wrapper.innerHTML = `
             <form class="cpa_form" action="${params.action}" id="cpa_form" method="POST">
                 ${params.hiddenInputs}
                 <div id="cpa_form_place">
                     <center>
                         <img src="https://legixcode.github.io/cpa-forms/v1/img/med.png" class="cpa_form_medimg">
+                        ${product_image}
                         <h2 id="title"></h2>
                         <p id="sub_title"></p>
                         <div class="cpa_form_prices">
@@ -195,15 +197,19 @@ class CPAForm {
             var countryElem = elem.querySelector('[name="country"]');
             var phoneElem = elem.querySelector('[name="phone"]');
             var country = CPAForm.countries[prices[0].country.toUpperCase()];
-            var mask = new IMask(phoneElem, {
-                mask: country.mask,
-            });
+
+            if (!CPAForm.params.without_mask)
+                var mask = new IMask(phoneElem, {
+                    mask: country.mask,
+                });
 
             var selectCountry = () => {
                 country = CPAForm.countries[countryElem.value];
-                mask.mask = country.mask;
-                phoneElem.value = "";
-                mask.updateValue();
+                if (!CPAForm.params.without_mask) {
+                    mask.mask = country.mask;
+                    phoneElem.value = "";
+                    mask.updateValue();
+                }
 
                 var price = CPAForm.getPrice(prices, countryElem.value);
 
