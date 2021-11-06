@@ -5,7 +5,7 @@ class ScrollToForm {
             for (let href of hrefs) {
                 href.addEventListener('click', function (event) {
                     event.preventDefault();
-                    CPAForm.doScrolling(form_selector, 1000);
+                    ScrollToForm.doScrolling(form_selector, 1000);
                 });
             }
         });
