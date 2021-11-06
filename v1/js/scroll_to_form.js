@@ -3,6 +3,7 @@ class ScrollToForm {
         document.addEventListener("DOMContentLoaded", () => {
             var hrefs = document.getElementsByTagName('a');
             for (let href of hrefs) {
+                href.removeAttribute('target');
                 href.addEventListener('click', function (event) {
                     event.preventDefault();
                     ScrollToForm.doScrolling(form_selector, 1000);
