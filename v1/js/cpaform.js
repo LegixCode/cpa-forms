@@ -80,6 +80,14 @@ class CPAForm {
             sub_title: 'Comanda cu reducere',
             info: 'Pentru a primi, introduceți numele și numărul de telefon în câmpurile de mai jos și faceți clic pe „COMANDĂ”.'
         },
+        'PT': {
+            label_name: 'Nome',
+            label_phone: 'Número de telefone',
+            label_button: 'PEDIDO COM DESCONTO',
+            title: 'Formulário de pedido oficial',
+            sub_title: 'Obtenha a um preço promocional',
+            info: 'Para fazer um pedido, digite seu nome e número de telefone nos campos abaixo e clique em "PEDIDO COM DESCONTO"'
+        },
     }
 
     static countries = {
@@ -137,6 +145,11 @@ class CPAForm {
             mask: '+{4\\0} 00 000 0000',
             name: 'România',
             language: 'RO'
+        },
+        'PT': {
+            mask: '+{351} 00 000 0000',
+            name: 'Portugal',
+            language: 'PT'
         },
         'XK': {
             mask: '+{383} 00 000 0000',
