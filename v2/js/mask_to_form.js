@@ -1,306 +1,58 @@
-class CPAForm {
-    static languages = {
-        'AL': {
-            label_name: 'Emri',
-            label_phone: 'Numri i telefonit',
-            label_button: 'POROSIT ME ZBRITJE',
-            title: 'Formulari zyrtar i porosisë',
-            sub_title: 'Porosit me një çmim promocional',
-            info: 'Për të bërë një porosi, shkruani emrin dhe numrin tuaj të telefonit në fushat më poshtë dhe klikoni "POROSIT ME ZBRITJE"'
-        },
-        'BA': {
-            label_name: 'Ime',
-            label_phone: 'Broj telefona',
-            label_button: 'OSTAVITE ZAHTJEV',
-            title: 'Službeni obrazac za narudžbu',
-            sub_title: "Nabavite promotivnu cijenu",
-            info: 'Da biste naručili, unesite svoje ime i broj telefona u polja ispod i kliknite "OSTAVITE ZAHTJEV"'
-        },
-        'BG': {
-            label_name: 'Име',
-            label_phone: 'Телефонен номер',
-            label_button: 'ОСТАВАЙ ЗАЯВКА',
-            title: 'Официален формуляр за поръчка',
-            sub_title: 'Вземете го на промоционална цена',
-            info: 'За да направите поръчка, въведете вашето име и телефонен номер в полетата по-долу и щракнете върху "ОСТАВАЙ ЗАЯВКА"'
-        },
-        'CZ': {
-            label_name: 'Jméno',
-            label_phone: 'Telefonní číslo',
-            label_button: 'OBJEDNAT',
-            title: 'Formulář oficiální objednávky',
-            sub_title: 'Získejte to za akční cenu',
-            info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "OBJEDNAT"'
-        },
-        'ES': {
-            label_name: 'Nombre',
-            label_phone: 'Número de teléfono',
-            label_button: 'DEJAR UNA SOLICITUD',
-            title: 'Formulario de pedido oficial',
-            sub_title: 'Consíguelo a un precio promocional',
-            info: 'Para realizar un pedido, ingrese su nombre y número de teléfono en los campos a continuación y haga clic en "DEJAR UNA SOLICITUD"'
-        },
-        'FI': {
-            label_name: 'Nimi',
-            label_phone: 'Puhelinnumero',
-            label_button: 'TILAA ALENNUKSELLA',
-            title: 'Virallinen tilauslomake',
-            sub_title: "Saat sen tarjoushintaan",
-            info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "TILAA ALENNUKSELLA"'
-        },
-        'GR': {
-            label_name: 'Ονομα',
-            label_phone: 'Αριθμός τηλεφώνου',
-            label_button: 'ΠΑΡΑΓΓΕΊΛΕΤΕ ΜΕ ΈΚΠΤΩΣΗ',
-            title: 'Επίσημη φόρμα παραγγελίας',
-            sub_title: 'Αποκτήστε το σε τιμή προσφοράς',
-            info: 'Για να το λάβετε, πληκτρολογήστε το όνομα και τον αριθμό τηλεφώνου σας στα παρακάτω πεδία και κάντε κλικ στο «ΠΑΡΑΓΓΕΊΛΕΤΕ ΜΕ ΈΚΠΤΩΣΗ».'
-        },
-        'IT': {
-            label_name: 'Nome',
-            label_phone: 'Numero di telefono',
-            label_button: 'ORDINA',
-            title: 'MODULO DI RICHIESTA UFFICIALE',
-            sub_title: 'Ordina a prezzo promozionale',
-            info: 'Per ricevere, inserisci il tuo nome e numero di telefono nei campi sottostanti e clicca su "ORDINA".'
-        },
-        'MK': {
-            label_name: 'Име',
-            label_phone: 'Телефонски број',
-            label_button: 'НАРАЧАЈТЕ СЕГА',
-            title: 'Официјален формулар за нарачка',
-            sub_title: 'Земете го по промотивна цена',
-            info: 'За да нарачате, внесете го вашето име и телефонски број во полињата подолу и кликнете "НАРАЧАЈТЕ СЕГА"'
-        },
-        'RO': {
-            label_name: 'Nume',
-            label_phone: 'Număr de telefon',
-            label_button: 'COMANDĂ',
-            title: 'Formular oficial de comandă',
-            sub_title: 'Comanda cu reducere',
-            info: 'Pentru a primi, introduceți numele și numărul de telefon în câmpurile de mai jos și faceți clic pe „COMANDĂ”.'
-        },
-        'PT': {
-            label_name: 'Nome',
-            label_phone: 'Número de telefone',
-            label_button: 'PEDIDO COM DESCONTO',
-            title: 'Formulário de pedido oficial',
-            sub_title: 'Obtenha a um preço promocional',
-            info: 'Para fazer um pedido, digite seu nome e número de telefone nos campos abaixo e clique em "PEDIDO COM DESCONTO"'
-        },
-    }
+const countries = {
+    'AL': '+{355} 00 000 0000',
+    'BA': '+{387} 00 000 0000',
+    'BG': '+{359} 00 000 00000',
+    'CL': '+{56} 00 000 0000',
+    'CZ': '+{42\\0} 000 000 000',
+    'ES': '+{34} 000 00 00 00',
+    'FI': '+{358} 00 0000000',
+    'GR': '+{3\\0} 00 0000 0000',
+    'IT': '+{39} 00 0000 0000',
+    'MK': '+{389} 00 000 000',
+    'RO': '+{4\\0} 00 000 0000',
+    'PT': '+{351} 00 000 0000',
+    'XK': '+{383} 00 000 0000',
+}
 
-    static countries = {
-        'AL': {
-            mask: '+{355} 00 000 0000',
-            name: 'Shqipëria',
-            language: 'AL'
-        },
-        'BA': {
-            mask: '+{387} 00 000 0000',
-            name: 'Bosna i Hercegovina',
-            language: 'BA'
-        },
-        'BG': {
-            mask: '+{359} 00 000 00000',
-            name: 'България',
-            language: 'BG'
-        },
-        'CL': {
-            mask: '+{56} 00 000 0000',
-            name: 'Chile',
-            language: 'ES'
-        },
-        'CZ': {
-            mask: '+{42\\0} 000 000 000',
-            name: 'čeština',
-            language: 'CZ'
-        },
-        'ES': {
-            mask: '+{34} 000 00 00 00',
-            name: 'España',
-            language: 'ES'
-        },
-        'FI': {
-            mask: '+{358} 00 0000000',
-            name: 'Suomi',
-            language: 'FI'
-        },
-        'GR': {
-            mask: '+{3\\0} 00 0000 0000',
-            name: 'Ελλάδα',
-            language: 'GR'
-        },
-        'IT': {
-            mask: '+{39} 00 0000 0000',
-            name: 'Italia',
-            language: 'IT'
-        },
-        'MK': {
-            mask: '+{389} 00 000 000',
-            name: 'Македонија',
-            language: 'MK'
-        },
-        'RO': {
-            mask: '+{4\\0} 00 000 0000',
-            name: 'România',
-            language: 'RO'
-        },
-        'PT': {
-            mask: '+{351} 00 000 0000',
-            name: 'Portugal',
-            language: 'PT'
-        },
-        'XK': {
-            mask: '+{383} 00 000 0000',
-            name: 'Kosova',
-            language: 'AL'
-        },
-    }
+function GetMask(country) {
+    if (countries[country])
+        return countries[country];
+    console.warn('Country not found');
+    return '+00000000000000';
+}
 
-    static params = {}
-
-    constructor(params) {
-        CPAForm.params = params;
-        document.addEventListener("DOMContentLoaded", () => {
-            var wrappers = document.getElementsByClassName('cpa_form_wrapper');
-            for (let wrapper of wrappers) {
-                var product_image = params.product_image ? `<img src="${params.product_image}" class="cpa_form_product">` : '';
-                wrapper.innerHTML = `
-            <form class="cpa_form" action="${params.action}" id="cpa_form" method="POST">
-                ${params.hiddenInputs}
-                <div id="cpa_form_place">
-                    <center>
-                        <img src="https://legixcode.github.io/cpa-forms/v1/img/med.png" class="cpa_form_medimg">
-                        ${product_image}
-                        <h2 id="title"></h2>
-                        <p id="sub_title"></p>
-                        <div class="cpa_form_prices">
-                            <span class="cpa_form_price_old"></span>
-                            <span class="cpa_form_price_new"></span>
-                        </div>
-                    </center>
-                    <div class="cpa_form_info" id="info">
-                    </div>
-                    <div id="input_wrapper"></div>
-                    <div id="country_wrapper"></div>
-                    <input name="name" placeholder="" required="" type="text">
-                    <input name="phone" placeholder="" required="" type="tel">
-                    <button type="submit"></button>
-                </div>
-            </form>`;
-            }
-            this.InitForms(params.prices);
-            if (params.scroll_to_form)
-                this.InitScrollToForm();
-        });
-    }
-
-    InitForms(prices) {
-        var elems = document.getElementsByClassName('cpa_form');
-        for (let elem of elems) {
-            var country_wrapper = elem.querySelector('#country_wrapper');
-            if (prices.length == 1) {
-                country_wrapper.innerHTML = `<input type="hidden" name="country" value="${prices[0].country.toUpperCase()}">`
-            } else {
-                var options = "";
-                prices.forEach(price => {
-                    options += `<option value="${price.country.toUpperCase()}">${CPAForm.countries[price.country.toUpperCase()].name}</option>`;
-                });
-                country_wrapper.innerHTML = `<select name="country">${options}</select>`;
-            }
-            var countryElem = elem.querySelector('[name="country"]');
-            var phoneElem = elem.querySelector('[name="phone"]');
-            var country = CPAForm.countries[prices[0].country.toUpperCase()];
-
-            if (!CPAForm.params.without_mask)
-                var mask = new IMask(phoneElem, {
-                    mask: country.mask,
-                });
-
-            var selectCountry = () => {
-                country = CPAForm.countries[countryElem.value];
-                if (!CPAForm.params.without_mask) {
-                    mask.mask = country.mask;
-                    phoneElem.value = "";
-                    mask.updateValue();
-                }
-
-                var price = CPAForm.getPrice(prices, countryElem.value);
-
-                if (price.hiddenInputs)
-                    elem.querySelector('#input_wrapper').innerHTML = price.hiddenInputs;
-
-                elem.querySelector('.cpa_form_price_old').innerText = price.price_old;
-                elem.querySelector('.cpa_form_price_new').innerText = price.price_new;
-
-                var language = CPAForm.languages[country.language];
-                phoneElem.placeholder = language.label_phone;
-                elem.querySelector('[name="name"]').placeholder = language.label_name;
-                elem.querySelector('button').innerText = language.label_button;
-                if (!CPAForm.params.without_title)
-                    elem.querySelector('#title').innerText = language.title;
-                if (!CPAForm.params.without_sub_title)
-                    elem.querySelector('#sub_title').innerText = language.sub_title;
-                if (!CPAForm.params.without_info)
-                    elem.querySelector('#info').innerText = language.info;
-                else
-                    elem.querySelector('#info').style.display = 'none';
-            }
-            selectCountry();
-            countryElem.addEventListener('change', selectCountry);
+function Init() {
+    var script = document.querySelector('[src="js/mask_to_form.js"]');
+    var forms = document.getElementsByTagName('form');
+    for (let form of forms) {
+        var phone_elem = form.querySelector('[name="phone"]');
+        if (!phone_elem) {
+            continue;
         }
-    }
+        if (script.hasAttribute('country')) {
+            var mask = new IMask(phone_elem, {
+                mask: GetMask(script.getAttribute('country'))
+            });
+        } else {
+            var country_elem = form.querySelector('[name="country"]');
+            if (!country_elem)
+                continue;
+            var mask = new IMask(phone_elem, {
+                mask: GetMask(country_elem.value)
+            });
 
-    static getPrice(prices, country) {
-        for (var i = 0; i < prices.length; i++)
-            if (prices[i].country == country)
-                return prices[i];
-        return false;
-    }
-
-    InitScrollToForm() {
-        var hrefs = document.getElementsByTagName('a');
-        for (let href of hrefs) {
-            href.addEventListener('click', function (event) {
-                event.preventDefault();
-                CPAForm.doScrolling('#cpa_form', 1000);
+            country_elem.addEventListener('change', () => {
+                mask.mask = GetMask(country_elem.value);
+                phone_elem.value = "";
+                mask.updateValue();
             });
         }
     }
-
-    static doScrolling(element, duration) {
-        var startingY = window.pageYOffset
-        var elementY = window.pageYOffset + document.querySelector(element).getBoundingClientRect().top
-        // If element is close to page's bottom then window will scroll only to some position above the element.
-        var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
-        var diff = targetY - startingY
-        var easing = function (t) { return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1 }
-        var start
-
-        if (!diff) return
-
-        // Bootstrap our animation - it will get called right before next frame shall be rendered.
-        window.requestAnimationFrame(function step(timestamp) {
-            if (!start) start = timestamp
-            // Elapsed miliseconds since start of scrolling.
-            var time = timestamp - start
-            // Get percent of completion in range [0, 1].
-            var percent = Math.min(time / duration, 1)
-            // Apply the easing.
-            // It can cause bad-looking slow frames in browser performance tool, so be careful.
-            percent = easing(percent)
-
-            window.scrollTo(0, startingY + diff * percent)
-
-            // Proceed with animation as long as we wanted it to.
-            if (time < duration) {
-                window.requestAnimationFrame(step)
-            }
-        })
-    }
-
 }
+
+document.addEventListener("DOMContentLoaded", Init);
+if (document.readyState === "complete") Init();
+
 
 /*
 https://github.com/uNmAnNeR/imaskjs
