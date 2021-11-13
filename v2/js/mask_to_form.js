@@ -22,7 +22,7 @@ function GetMask(country) {
 }
 
 function Init() {
-    var script = document.querySelector('[src="js/mask_to_form.js"]');
+    var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/mask_to_form.js"]');
     var forms = document.getElementsByTagName('form');
     for (let form of forms) {
         var phone_elem = form.querySelector('[name="phone"]');

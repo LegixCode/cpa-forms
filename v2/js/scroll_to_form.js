@@ -32,7 +32,7 @@ function EnableScroll(element) {
 }
 
 function Init() {
-    var script = document.querySelector('[src="js/scroll_to_form.js"]');
+    var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/scroll_to_form.js"]');
     if (script.hasAttribute('form_id')) {
         var form_id = script.getAttribute('form_id');
         console.log(form_id);
