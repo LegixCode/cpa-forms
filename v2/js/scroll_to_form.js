@@ -31,7 +31,7 @@ function EnableScroll(element) {
     }
 }
 
-function InitScrollToForm() {
+function InitScrollToForm(delay = 100) {
     setTimeout(() => {
         var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/scroll_to_form.js"]');
         if (script.hasAttribute('form_id')) {
@@ -49,8 +49,8 @@ function InitScrollToForm() {
             }
         }
         console.warn('Form not found');
-    }, 1000);
+    }, delay);
 }
 
 document.addEventListener("DOMContentLoaded", InitScrollToForm);
-if (document.readyState === "complete") InitScrollToForm();
+if (document.readyState === "complete") InitScrollToForm(700);
