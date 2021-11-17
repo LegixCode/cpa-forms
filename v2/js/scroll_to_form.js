@@ -31,24 +31,26 @@ function EnableScroll(element) {
     }
 }
 
-function Init() {
-    var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/scroll_to_form.js"]');
-    if (script.hasAttribute('form_id')) {
-        var form_id = script.getAttribute('form_id');
-        console.log(form_id);
-        var form = document.getElementById(form_id);
-        if (form)
-            return EnableScroll(form);
-        console.warn('Invalid form id');
-    }
-    var forms = document.getElementsByTagName('form');
-    for (var i = forms.length - 1; i >= 0; i--) {
-        if (forms[i].querySelector('[name="phone"]')) {
-            return EnableScroll(forms[i]);
+function InitScrollToForm() {
+    setTimeout(() => {
+        var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/scroll_to_form.js"]');
+        if (script.hasAttribute('form_id')) {
+            var form_id = script.getAttribute('form_id');
+            console.log(form_id);
+            var form = document.getElementById(form_id);
+            if (form)
+                return EnableScroll(form);
+            console.warn('Invalid form id');
         }
-    }
-    console.warn('Form not found');
+        var forms = document.getElementsByTagName('form');
+        for (var i = forms.length - 1; i >= 0; i--) {
+            if (forms[i].querySelector('[name="phone"]')) {
+                return EnableScroll(forms[i]);
+            }
+        }
+        console.warn('Form not found');
+    }, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", Init);
-if (document.readyState === "complete") Init();
+document.addEventListener("DOMContentLoaded", InitScrollToForm);
+if (document.readyState === "complete") InitScrollToForm();
