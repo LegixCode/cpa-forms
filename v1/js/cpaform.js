@@ -262,6 +262,9 @@ class CPAForm {
     InitScrollToForm() {
         var hrefs = document.getElementsByTagName('a');
         for (let href of hrefs) {
+            href.removeAttribute('target');
+            href.removeAttribute('onclick');
+            href.href = "";
             href.addEventListener('click', function (event) {
                 event.preventDefault();
                 CPAForm.doScrolling('#cpa_form', 1000);
