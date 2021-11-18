@@ -8,6 +8,7 @@ v6.2.2
 
 const countries = {
     'AL': '+{355} 00 000 0000',
+    'AR': '+{54} 00000000000',
     'BA': '+{387} 00 000 0000',
     'BG': '+{359} 00 000 00000',
     'CL': '+{56} 00 000 0000',
@@ -29,7 +30,7 @@ function GetMask(country) {
     return '+00000000000000';
 }
 
-function Init() {
+function InitMaskToForm() {
     var script = document.querySelector('[src="https://legixcode.github.io/cpa-forms/v2/js/mask_to_form.js"]');
     var forms = document.getElementsByTagName('form');
     for (let form of forms) {
@@ -58,5 +59,5 @@ function Init() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", Init);
-if (document.readyState === "complete") Init();
+document.addEventListener("DOMContentLoaded", InitMaskToForm);
+if (document.readyState === "complete") InitMaskToForm();
