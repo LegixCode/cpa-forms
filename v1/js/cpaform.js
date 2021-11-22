@@ -88,6 +88,14 @@ class CPAForm {
             sub_title: 'Obtenha a um preço promocional',
             info: 'Para fazer um pedido, digite seu nome e número de telefone nos campos abaixo e clique em "PEDIDO COM DESCONTO"'
         },
+        'PH': {
+            label_name: 'Pangalan',
+            label_phone: 'Numero ng telepono',
+            label_button: 'DISCOUNT ORDER',
+            pamagat: 'Opisyal na Form ng Order',
+            sub_title: 'Kunin ito sa isang pampromosyong presyo',
+            impormasyon: 'Upang mag-order, ilagay ang iyong pangalan at numero ng telepono sa mga patlang sa ibaba at mag-click sa "DISCOUNT ORDER"'
+        },
     }
 
     static countries = {
@@ -150,6 +158,11 @@ class CPAForm {
             mask: '+{351} 00 000 0000',
             name: 'Portugal',
             language: 'PT'
+        },
+        'PH': {
+            mask: '+{63} 000 000 0000',
+            name: 'Pilipinas',
+            language: 'PH'
         },
         'XK': {
             mask: '+{383} 00 000 0000',
