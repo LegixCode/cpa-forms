@@ -92,9 +92,9 @@ class CPAForm {
             label_name: 'Pangalan',
             label_phone: 'Numero ng telepono',
             label_button: 'DISCOUNT ORDER',
-            pamagat: 'Opisyal na Form ng Order',
+            title: 'Opisyal na Form ng Order',
             sub_title: 'Kunin ito sa isang pampromosyong presyo',
-            impormasyon: 'Upang mag-order, ilagay ang iyong pangalan at numero ng telepono sa mga patlang sa ibaba at mag-click sa "DISCOUNT ORDER"'
+            info: 'Upang mag-order, ilagay ang iyong pangalan at numero ng telepono sa mga patlang sa ibaba at mag-click sa "DISCOUNT ORDER"'
         },
     }
 
