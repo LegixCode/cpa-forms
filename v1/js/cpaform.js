@@ -255,8 +255,9 @@ class CPAForm {
                     elem.querySelector('#title').innerText = language.title;
                 if (!CPAForm.params.without_sub_title)
                     elem.querySelector('#sub_title').innerText = language.sub_title;
-                if (!CPAForm.params.without_info)
-                    elem.querySelector('#info').innerText = language.info;
+                if (!CPAForm.params.without_info) {
+                    elem.querySelector('#info').innerText = CPAForm.params.info ? CPAForm.params.info : language.info;
+                }
                 else
                     elem.querySelector('#info').style.display = 'none';
             }
