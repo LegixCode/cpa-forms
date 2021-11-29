@@ -115,8 +115,13 @@ class CPAForm {
             language: 'BG'
         },
         'CL': {
-            mask: '+{56} 00 000 0000',
+            mask: '+{56} 00 000 00000',
             name: 'Chile',
+            language: 'ES'
+        },
+        'CO': {
+            mask: '+{57} 000 00000000',
+            name: 'Colombia',
             language: 'ES'
         },
         'CZ': {
