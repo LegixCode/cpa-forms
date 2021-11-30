@@ -33,7 +33,7 @@ for (let form of forms)
         }
         xhr.send(data);
     });
-var css = '#formloader_wrapper.formloader_wrapper{background:rgba(255,255,255,0.7) !important;position:absolute;left:0;right:0;top:0;bottom:0;} #formloader.formloader{animation:spin 1s infinite linear;background:transparent !important;border:solid 2vmin transparent;border-radius:50%;border-right-color:#09f;border-top-color:#09f;box-sizing:border-box;height:20vmin;left:calc(50% - 10vmin);position:absolute;top:calc(50% - 10vmin);width:20vmin;z-index:1}@keyframes spin{100%{transform:rotate(360deg)}}',
+var css = '#formloader_wrapper.formloader_wrapper{background:rgba(255,255,255,0.7) !important;z-index: 9999;position:absolute;left:0;right:0;top:0;bottom:0;} #formloader.formloader{animation:spin 1s infinite linear;background:transparent !important;border:solid 2vmin transparent;border-radius:50%;border-right-color:#09f;border-top-color:#09f;box-sizing:border-box;height:20vmin;left:calc(50% - 10vmin);position:absolute;top:calc(50% - 10vmin);width:20vmin;z-index:1}@keyframes spin{100%{transform:rotate(360deg)}}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
