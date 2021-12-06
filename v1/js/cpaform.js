@@ -159,6 +159,11 @@ class CPAForm {
             name: 'România',
             language: 'RO'
         },
+        'RS': {
+            mask: '+{381} 00 00000000',
+            name: 'Србија',
+            language: 'AL'
+        },
         'PT': {
             mask: '+{351} 00 000 0000',
             name: 'Portugal',
