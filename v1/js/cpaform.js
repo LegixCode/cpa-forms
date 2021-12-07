@@ -56,6 +56,14 @@ class CPAForm {
             sub_title: 'Αποκτήστε το σε τιμή προσφοράς',
             info: 'Για να το λάβετε, πληκτρολογήστε το όνομα και τον αριθμό τηλεφώνου σας στα παρακάτω πεδία και κάντε κλικ στο «ΠΑΡΑΓΓΕΊΛΕΤΕ ΜΕ ΈΚΠΤΩΣΗ».'
         },
+        'HR': {
+            label_name: 'Ime',
+            label_phone: 'Telefon',
+            label_button: 'Naručiti',
+            title: 'Službeni obrazac za narudžbu',
+            sub_title: 'Naručite uz popust',
+            info: 'Za primanje unesite svoje ime i telefonski broj u polja ispod i kliknite "Naručiti".'
+        },
         'IT': {
             label_name: 'Nome',
             label_phone: 'Numero di telefono',
@@ -143,6 +151,11 @@ class CPAForm {
             mask: '+{3\\0} 00 0000 0000',
             name: 'Ελλάδα',
             language: 'GR'
+        },
+        'HR': {
+            mask: '+{385} 000 000 000',
+            name: 'Hrvatska',
+            language: 'HR'
         },
         'IT': {
             mask: '+{39} 00 0000 0000',
