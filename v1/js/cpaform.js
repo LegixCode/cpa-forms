@@ -48,6 +48,14 @@ class CPAForm {
             sub_title: "Saat sen tarjoushintaan",
             info: 'Tilauksen tekemiseksi syötä nimesi ja puhelinnumerosi alla oleviin kenttiin ja napsauta "TILAA ALENNUKSELLA"'
         },
+        'FR': {
+            label_name: 'Nom',
+            label_phone: 'Numéro de téléphone',
+            label_button: 'ENVOYER LA COMMANDE',
+            title: 'Bon de commande officiel',
+            sub_title: 'Obtenez-le à un prix promotionnel',
+            info: 'Pour passer une commande, entrez votre nom et votre numéro de téléphone dans les champs ci-dessous et cliquez sur "ENVOYER LA COMMANDE"'
+        },
         'GR': {
             label_name: 'Ονομα',
             label_phone: 'Αριθμός τηλεφώνου',
@@ -146,6 +154,11 @@ class CPAForm {
             mask: '+{358} 00 0000000',
             name: 'Suomi',
             language: 'FI'
+        },
+        'FR': {
+            mask: '+{33} 0 00 00 00 00',
+            name: 'La France',
+            language: 'FR'
         },
         'GR': {
             mask: '+{3\\0} 00 0000 0000',
