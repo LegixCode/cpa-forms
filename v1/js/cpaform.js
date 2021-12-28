@@ -96,6 +96,14 @@ class CPAForm {
             sub_title: 'Comanda cu reducere',
             info: 'Pentru a primi, introduceți numele și numărul de telefon în câmpurile de mai jos și faceți clic pe „COMANDĂ”.'
         },
+        'PL': {
+            label_name: 'Nazwa',
+            label_phone: 'Numer telefonu',
+            label_button: 'ZAMÓWIENIE Z RABATEM',
+            title: 'Formularz Zamówień',
+            sub_title: 'Kup w promocyjnej cenie',
+            info: 'Aby złożyć zamówienie, wpisz swoje imię i nazwisko oraz numer telefonu w poniższe pola i kliknij "ZAMÓWIENIE Z RABATEM"'
+        },
         'PT': {
             label_name: 'Nome',
             label_phone: 'Número de telefone',
@@ -189,6 +197,11 @@ class CPAForm {
             mask: '+{381} 00 00000000',
             name: 'Србија',
             language: 'AL'
+        },
+        'PL': {
+            mask: '+{48} 00 000 00 00',
+            name: 'Polska',
+            language: 'PL'
         },
         'PT': {
             mask: '+{351} 00 000 0000',
