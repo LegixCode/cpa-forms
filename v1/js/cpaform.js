@@ -188,6 +188,11 @@ class CPAForm {
             name: 'Македонија',
             language: 'MK'
         },
+        'MX': {
+            mask: '+{52} 00 0000 0000',
+            name: 'México',
+            language: 'ES'
+        },
         'RO': {
             mask: '+{4\\0} 00 000 0000',
             name: 'România',
