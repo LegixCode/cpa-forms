@@ -203,6 +203,11 @@ class CPAForm {
             name: 'Србија',
             language: 'AL'
         },
+        'PE': {
+            mask: '+{51} 000 000 0000',
+            name: 'Perú',
+            language: 'ES'
+        },
         'PL': {
             mask: '+{48} 00 000 00 00',
             name: 'Polska',
