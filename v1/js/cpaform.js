@@ -120,6 +120,14 @@ class CPAForm {
             sub_title: 'Kunin ito sa isang pampromosyong presyo',
             info: 'Upang mag-order, ilagay ang iyong pangalan at numero ng telepono sa mga patlang sa ibaba at mag-click sa "DISCOUNT ORDER"'
         },
+        'SI': {
+            label_name: 'Ime',
+            label_phone: 'Telefonska številka',
+            label_button: 'NAROČI S POPUSTOM',
+            title: 'Uradni obrazec za naročilo',
+            sub_title: "Pridobite promocijsko ceno",
+            info: 'Za naročilo vnesite svoje ime in telefonsko številko v spodnja polja in kliknite "NAROČI S POPUSTOM"'
+        },
     }
 
     static countries = {
@@ -202,6 +210,11 @@ class CPAForm {
             mask: '+{381} 00 00000000',
             name: 'Србија',
             language: 'AL'
+        },
+        'SI': {
+            mask: '+{386} 00 000 000',
+            name: 'Slovenija',
+            language: 'SI'
         },
         'PE': {
             mask: '+{51} 000 000 0000',
