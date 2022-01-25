@@ -32,6 +32,14 @@ class CPAForm {
             sub_title: 'Získejte to za akční cenu',
             info: 'Chcete-li zadat objednávku, zadejte své jméno a telefonní číslo do polí níže a klikněte na "OBJEDNAT"'
         },
+        'DE': {
+            label_name: 'Name',
+            label_phone: 'Telefonnummer',
+            label_button: 'JETZT ERHALTEN',
+            title: 'Offizielles Bestellformular',
+            sub_title: 'Holen Sie es sich zum Sonderpreis',
+            info: 'Um eine Bestellung aufzugeben, geben Sie Ihren Namen und Ihre Telefonnummer in die Felder unten ein und klicken Sie auf "JETZT ERHALTEN"'
+        },
         'ES': {
             label_name: 'Nombre',
             label_phone: 'Número de teléfono',
@@ -136,6 +144,11 @@ class CPAForm {
             name: 'Shqipëria',
             language: 'AL'
         },
+        'AT': {
+            mask: '+{43} 000 00000000',
+            name: 'Österreich',
+            language: 'DE'
+        },
         'BA': {
             mask: '+{387} 00 000 0000',
             name: 'Bosna i Hercegovina',
@@ -165,6 +178,11 @@ class CPAForm {
             mask: '+{34} 000 00 00 00',
             name: 'España',
             language: 'ES'
+        },
+        'DE': {
+            mask: '+{49} 00 00000000',
+            name: 'Deutschland',
+            language: 'DE'
         },
         'FI': {
             mask: '+{358} 00 0000000',
