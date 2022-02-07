@@ -88,6 +88,14 @@ class CPAForm {
             sub_title: 'Ordina a prezzo promozionale',
             info: 'Per ricevere, inserisci il tuo nome e numero di telefono nei campi sottostanti e clicca su "ORDINA".'
         },
+        'ID': {
+            label_name: 'Nama',
+            label_phone: 'Nomor telepon',
+            label_button: 'ORDER SEKARANG ',
+            title: 'FORMULIR PEMESANAN RESMI',
+            sub_title: 'Pesan dengan harga promo',
+            info: 'Untuk menerima, masukkan nama dan nomor telepon Anda di kolom di bawah ini dan klik "ORDER SEKARANG ".'
+        },
         'MK': {
             label_name: 'Име',
             label_phone: 'Телефонски број',
@@ -203,6 +211,11 @@ class CPAForm {
             mask: '+{385} 000 000 000',
             name: 'Hrvatska',
             language: 'HR'
+        },
+        'ID': {
+            mask: '+{62} 00000000000',
+            name: 'Indonesia',
+            language: 'ID'
         },
         'IT': {
             mask: '+{39} 00 0000 0000',
