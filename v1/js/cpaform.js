@@ -157,6 +157,11 @@ class CPAForm {
             name: 'Österreich',
             language: 'DE'
         },
+        'AR': {
+            mask: '+{54} 00000000000',
+            name: 'Argentina',
+            language: 'ES'
+        },
         'BA': {
             mask: '+{387} 00 000 0000',
             name: 'Bosna i Hercegovina',
