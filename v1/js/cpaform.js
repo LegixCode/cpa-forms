@@ -80,6 +80,14 @@ class CPAForm {
             sub_title: 'Naručite uz popust',
             info: 'Za primanje unesite svoje ime i telefonski broj u polja ispod i kliknite "Naručiti".'
         },
+        'HU': {
+            label_name: 'Név',
+            label_phone: 'Telefonszám',
+            label_button: 'ORDER',
+            title: 'Hivatalos megrendelőlap',
+            sub_title: 'Vedd meg különleges áron',
+            info: 'Megrendelés leadásához írja be nevét és telefonszámát az alábbi mezőkbe, majd kattintson a "ORDER" gombra'
+        },
         'IT': {
             label_name: 'Nome',
             label_phone: 'Numero di telefono',
@@ -216,6 +224,11 @@ class CPAForm {
             mask: '+{385} 000 000 000',
             name: 'Hrvatska',
             language: 'HR'
+        },
+        'HU': {
+            mask: '+{36} 000 000 000',
+            name: 'Magyarország',
+            language: 'HU'
         },
         'ID': {
             mask: '+{62} 00000000000',
