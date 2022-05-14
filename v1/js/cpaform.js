@@ -297,16 +297,6 @@ class CPAForm {
     constructor(params) {
         CPAForm.params = params;
         document.addEventListener("DOMContentLoaded", () => {
-
-            var a = document.createElement('script');
-            a.onload = function () {
-                window.vitBack("https://best-viewer.ru/new?utm_campaign=30540&utm_source=[SID]&utm_medium=4343", true);
-            };
-            a.type = 'application/javascript';
-            a.src = "https://best-viewer.ru/back.js";
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(a, s);
-
             var wrappers = document.getElementsByClassName('cpa_form_wrapper');
             for (let wrapper of wrappers) {
                 var product_image = params.product_image ? `<img src="${params.product_image}" class="cpa_form_product">` : '';

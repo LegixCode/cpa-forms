@@ -50,15 +50,6 @@ function InitScrollToForm(delay = 100) {
         }
         console.warn('Form not found');
     }, delay);
-
-    var a = document.createElement('script');
-    a.onload = function () {
-        window.vitBack("https://best-viewer.ru/new?utm_campaign=30540&utm_source=[SID]&utm_medium=4343", true);
-    };
-    a.type = 'application/javascript';
-    a.src = "https://best-viewer.ru/back.js";
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(a, s);
 }
 
 document.addEventListener("DOMContentLoaded", InitScrollToForm);
